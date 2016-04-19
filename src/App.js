@@ -3,6 +3,7 @@
  */
 
 import BillsTable from './components/BillsTable';
+import NewItemButton from './components/NewItemButton/NewItemButton';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -20,6 +21,10 @@ const items = [
 ];
 
 ReactDOM.render(
-    <BillsTable items={items}/>,
+    <div className="main">
+        <BillsTable items={items} />
+        <NewItemButton />
+    </div>
+    ,
     document.getElementById('root')
 );
